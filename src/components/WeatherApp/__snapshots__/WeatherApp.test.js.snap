@@ -28,7 +28,7 @@ exports[`test WeatherApp renders correctly 1`] = `
         "textAlign": "center",
       }
     }>
-    You input 
+    You inputted 
     
     .
   </Text>

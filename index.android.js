@@ -4,6 +4,6 @@
  */
 
 import { AppRegistry } from 'react-native';
-import WeatherApp from './WeatherApp.js';
+import WeatherApp from './src/components/WeatherApp/WeatherApp.js';
 
 AppRegistry.registerComponent('WeatherApp', () => WeatherApp);

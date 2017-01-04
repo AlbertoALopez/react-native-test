@@ -9,9 +9,9 @@ import renderer from 'react-test-renderer';
 
 
 it('WeatherApp renders correctly', () => {
-    const tree = renderer.create(
-        <WeatherApp />
-    ).toJSON();
+  const tree = renderer.create(
+    <WeatherApp />
+  ).toJSON();
 
-    expect(tree).toMatchSnapshot();
+  expect(tree).toMatchSnapshot();
 });

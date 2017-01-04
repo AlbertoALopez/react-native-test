@@ -1,0 +1,49 @@
+exports[`test Forecast renders correctly 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#FFF",
+        "flex": 2,
+        "fontSize": 20,
+        "margin": 10,
+        "textAlign": "center",
+      }
+    }>
+    test
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#FFF",
+        "flex": 1,
+        "fontSize": 20,
+        "textAlign": "center",
+      }
+    }>
+    Current conditions: 
+    test
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#FFF",
+        "flex": 2,
+        "fontSize": 20,
+        "margin": 10,
+        "textAlign": "center",
+      }
+    }>
+    24.5
+  </Text>
+</View>
+`;
