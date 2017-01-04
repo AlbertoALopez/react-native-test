@@ -12,14 +12,14 @@ import {
 
 const styles = StyleSheet.create({
   bigText: {
-    // flex: 2,
+    flex: 0,
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
     color: '#FFF',
   },
   mainText: {
-    // flex: 1,
+    flex: 0,
     fontSize: 16,
     textAlign: 'center',
     color: '#FFF',
