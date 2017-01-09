@@ -8,6 +8,7 @@ import {
   Text,
   TextInput,
   View,
+  Image,
 } from 'react-native';
 import Forecast from '../Forecast/Forecast';
 
@@ -31,6 +32,10 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     height: 40,
   },
+  backdrop: {
+    resizeMode: 'cover',
+    flex: 1,
+  },
 });
 
 export default class WeatherApp extends Component {
@@ -53,21 +58,30 @@ export default class WeatherApp extends Component {
   }
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          You inputted {this.state.zip}.
-        </Text>
-        <Forecast
-          main={this.state.forecast.main}
-          description={this.state.forecast.description}
-          temp={this.state.forecast.temp}
-        />
-        <TextInput
-          style={styles.input}
-          returnKeyType="go"
-          onSubmitEditing={this.handleTextChange}
-        />
-      </View>
+      <Image
+        source={require('./img/rain.png')}
+        style={styles.backdrop}
+      >
+        <View style={styles.overlay}>
+          <View style={styles.row}>
+            <Text style={styles.mainText}>
+              Current weather for
+            </Text>
+            <View style={styles.zipContainer}>
+              <TextInput
+                style={[styles.zipCode, styles.mainText]}
+                returnKeyType="go"
+                onSubmitEditing={this.handleTextChange}
+              />
+            </View>
+          </View>
+          <Forecast
+            main={this.state.forecast.main}
+            description={this.state.forecast.description}
+            temp={this.state.forecast.temp}
+          />
+        </View>
+      </Image>
     );
   }
 }
